@@ -1,0 +1,7 @@
+{
+  "name": "brocoli-app",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
