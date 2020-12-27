@@ -1,17 +1,17 @@
 import React from 'react';
-import { IonContent, IonHeader, IonIcon, IonPage, IonTitle, IonToolbar } from '@ionic/react';
+import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
 import ExploreContainer from '../components/ExploreContainer';
 import './Tab1.css';
 //import { cart } from 'ionicons/icons';
 
-const Tab1: React.FC = () => {
+const Tab2: React.FC = () => {
   return (
     <IonPage>
       <IonHeader>
         <IonToolbar color="success">
           <IonTitle>History</IonTitle>
         </IonToolbar>
-      </IonHeader>  
+      </IonHeader>
       <IonContent fullscreen>
         <IonHeader collapse="condense" color="success">
           <IonToolbar>
@@ -24,4 +24,4 @@ const Tab1: React.FC = () => {
   );
 };
 
-export default Tab1;
+export default Tab2;

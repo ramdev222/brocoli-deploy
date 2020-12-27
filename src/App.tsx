@@ -12,7 +12,7 @@ import { IonReactRouter } from '@ionic/react-router';
 import Tab1 from './pages/Tab1';
 import Tab2 from './pages/Tab2';
 import Tab3 from './pages/Tab3';
-import { home, list, personCircle } from 'ionicons/icons';
+import { list, personCircle, storefront } from 'ionicons/icons';
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -45,7 +45,7 @@ const App: React.FC = () => (
         </IonRouterOutlet>
         <IonTabBar slot="bottom">
           <IonTabButton tab="tab1" href="/tab1">
-            <IonIcon icon={home} />
+            <IonIcon icon={storefront} />
           </IonTabButton>
           <IonTabButton tab="tab2" href="/tab2">
           <IonIcon icon={list} />

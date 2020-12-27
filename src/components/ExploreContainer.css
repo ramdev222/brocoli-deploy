@@ -22,3 +22,22 @@
 .container a {
   text-decoration: none;
 }
+
+.popover-content {
+  background: #ffffff;
+}
+
+.popup-custom .popover-content {
+  background: #ffffff;
+  padding: 0% 0% 0% 8%;
+}
+
+.popup-custom {
+  --padding: 1%;
+  --background: #ffffff;
+}
+
+.iconreceipt {
+  font-size: 15vh;
+  color: greenyellow;
+}

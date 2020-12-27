@@ -1,17 +1,39 @@
-import React from 'react';
+import React, {Component} from 'react';
 //import ExploreContainer from '../components/ExploreContainer';
 import './Tab2.css';
 
-import { camera } from 'ionicons/icons';
+import { cartOutline, scanSharp } from 'ionicons/icons';
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar,
          IonFab, IonFabButton, IonIcon, IonGrid,
-         IonCol, IonImg, IonList } from '@ionic/react';
+         IonCol, IonImg, IonList, IonLabel, IonButton } from '@ionic/react';
 
 import { usePhotoGallery } from '../hooks/usePhotoGallery';
+//import { render } from '@testing-library/react';
 
-const Tab2: React.FC = () => {
+/*class Sentient extends Component{
+  constructor(props){
+    super(props);
+    this.state = {
+      items: [],
+      isLoaded: false,
+    }
+  }
+  componentDidMount() {
+    fetch('')
+    .then(res => res.json())
+    .then(json => {
+      this.setState({
+        isLoaded: true,
+        items: json,
+      })
+    });
+    
+  }
+}*/
+
+export const Tab1: React.FC = () => {
    const { photos, takePhoto } = usePhotoGallery();
-   
+
   return (
 <IonPage>
   <IonHeader>
@@ -22,7 +44,7 @@ const Tab2: React.FC = () => {
  <IonContent>
   <IonFab vertical="bottom" horizontal="center" slot="fixed">
     <IonFabButton onClick={() => takePhoto()} color="success">
-      <IonIcon icon={camera}></IonIcon>
+      <IonIcon icon={scanSharp}></IonIcon>
     </IonFabButton>
   </IonFab>
   <IonGrid>
@@ -30,6 +52,8 @@ const Tab2: React.FC = () => {
       {photos.map((photo, index) => (
         <IonCol size="6" key={index}>
           <IonImg src={photo.webviewPath} />
+          <IonLabel>( Item name, Price, under const... )</IonLabel>
+          <IonButton><IonIcon icon={cartOutline}></IonIcon></IonButton>
         </IonCol>
       ))}
     </IonList>
@@ -39,5 +63,4 @@ const Tab2: React.FC = () => {
   );
 };
 
-export default Tab2;
-
+export default Tab1;
