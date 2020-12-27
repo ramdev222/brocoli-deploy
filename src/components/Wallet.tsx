@@ -14,6 +14,7 @@ const Wallet: React.FC<ContainerProps> = ({ name }) => {
           <IonLabel>UNDER CONSTRUCTION...</IonLabel>
           <br></br>
           <IonIcon icon={walletOutline}></IonIcon>
+
     </div>
   );
 };
