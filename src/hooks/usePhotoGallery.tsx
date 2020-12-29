@@ -33,6 +33,25 @@ export function usePhotoGallery() {
     directory: FilesystemDirectory.Data
   });
 
+  /*
+//DATA to path sentient.io ABOVE code fetch SEEMS TO BE NOT WORKING
+
+const xhr = new XMLHttpRequest();
+//Please disable this when testing in local
+xhr.withCredentials = true;
+
+xhr.addEventListener("readystatechange", function () {
+  if (this.readyState === this.DONE) {
+    console.log(this.responseText);
+  }
+});
+
+xhr.open("POST", "https://apis.sentient.io/microservices/cv/objectdetection/v0.1/getpredictions");
+xhr.setRequestHeader("content-type", "application/json");
+xhr.setRequestHeader("x-api-key", "F6B5166BDF9E4F6F8FFE");
+
+xhr.send(data);*/
+
   // Use webPath to display the new image instead of base64 since it's
   // already loaded into memory
   return {

@@ -1,39 +1,15 @@
-import React, {Component} from 'react';
-//import ExploreContainer from '../components/ExploreContainer';
+import React from 'react';
 import './Tab2.css';
-
+//import Sentient from '../components/Sentientcall';
 import { cartOutline, scanSharp } from 'ionicons/icons';
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar,
          IonFab, IonFabButton, IonIcon, IonGrid,
          IonCol, IonImg, IonList, IonLabel, IonButton } from '@ionic/react';
 
 import { usePhotoGallery } from '../hooks/usePhotoGallery';
-//import { render } from '@testing-library/react';
-
-/*class Sentient extends Component{
-  constructor(props){
-    super(props);
-    this.state = {
-      items: [],
-      isLoaded: false,
-    }
-  }
-  componentDidMount() {
-    fetch('')
-    .then(res => res.json())
-    .then(json => {
-      this.setState({
-        isLoaded: true,
-        items: json,
-      })
-    });
-    
-  }
-}*/
 
 export const Tab1: React.FC = () => {
    const { photos, takePhoto } = usePhotoGallery();
-
   return (
 <IonPage>
   <IonHeader>
@@ -62,5 +38,6 @@ export const Tab1: React.FC = () => {
 </IonPage>
   );
 };
+
 
 export default Tab1;
